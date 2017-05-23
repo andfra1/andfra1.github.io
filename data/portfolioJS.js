@@ -23,8 +23,8 @@ function defaultSet() {
 function lineFullScreen() {
     line.classList.remove('line-afterClick');
     line.classList.add('line-fullScreen');
-    wrapper.style.opacity = '0.1';
-    //wrapper.style.backgroundSize = '130%';
+    wrapper.style.opacity = '0.2';
+    wrapper.style.backgroundSize = '130%';
     wrapper.style.transitionDelay = '0.3s';
     for (var cntnt = 0; cntnt < content.length; cntnt++) {
         content[cntnt].style.opacity = '1';
