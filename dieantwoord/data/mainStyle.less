@@ -1,0 +1,457 @@
+* {
+margin: 0;
+padding: 0;
+border: 0;
+}
+
+html, body {
+height: 100%;
+margin: 0;
+}
+
+body {
+background-color: #000;
+background: url('img/bg.jpg') top center no-repeat;
+}
+
+div, blockquote, footer, article, aside, img, address {
+display: block;
+}
+
+@white: #ffffff;
+
+@colorA: #000;
+@colorV: @colorA;
+@colorH: @white;
+
+a {
+color: @colorA;
+text-decoration: none;
+}
+
+a:visited {
+color: @colorV;
+}
+
+a:hover {
+color: @colorH;
+}
+
+a:active {
+color: #000;
+}
+
+img {
+border: 0;
+}
+
+@orange: #ff8000;
+@color1: #000;
+@w: 100%;
+@h: 100%;
+@a: absolute;
+@r: relative;
+
+@bgmenu: #000;
+@menuftcolor: @white;
+@menuftcolor2: @orange;
+@menuft: 16px;
+
+#wrapper {
+	width: @w;
+	height: @h;
+	display: table;
+}
+
+nav {
+	top: 0;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	background: @bgmenu;
+	z-index: 9999;
+	border-bottom: 1px solid @white;
+}
+
+
+/* jakieś takie do dupy to menu - chyba lepiej napisać nowe */
+ul#mainMenu {
+display: block;
+font-family: 'Ranga', verdana, cursive;
+font-size: @menuft;
+list-style-type: none;
+line-height: 32px;
+float: left;
+color: @menuftcolor;
+}
+
+ul#mainMenu li {
+display: inline-block;
+padding: 5px 8px;
+color: @menuftcolor;
+}
+
+ul#mainMenu li.firstMMItem {
+	padding-left: 16px;	
+}
+
+ul#mainMenu li a {
+	color: @menuftcolor;
+}
+
+ul#mainMenu li a:hover {
+	color: @menuftcolor2;
+}
+
+#mainMenu li:hover ul#buy {
+display: block;
+}
+
+.LastItem {
+padding: 6px;	
+}
+
+/* BUY - Amazon & iTunes - begin */
+
+ul#buy {
+margin-left: -40px;
+margin-top: 0px;
+background: @bgmenu;
+position: absolute;
+display: none;
+float: left;
+width: 120px;
+border-bottom: 1px solid @white;
+z-index: 1px;
+}
+
+ul#buy li {
+display: block;
+padding: 15px 20px 0 20px;
+border-left: 1px solid @white;
+border-right: 1px solid @white;
+}
+
+ul#buy li.FirstBuyItem {
+margin-top: 6px;
+}
+
+ul#buy li.LastBuyItem {
+padding-bottom: 20px;
+}
+
+ul#buy li a {
+border: 0;
+color: #000;
+}
+
+ul#buy li img {
+width: @w;
+height: @h;
+opacity: 0.6;
+padding: 0;
+	&:hover {
+	opacity: 1;
+	}
+}
+
+/* BUY - Amazon & iTunes - end */
+
+/* CSS menu i ikony dla "social"    ok */
+#social {
+	float: right;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+#social > li {
+	display: inline-block;
+}
+
+#social li a {
+		border: 0;
+color: #000;
+}
+
+#social li img {
+	width: 23px;
+	height: 23px;
+	opacity: 0.7;
+	padding: 10px 5px 5px 5px;
+		&:hover {
+		opacity: 1;
+		}
+}
+
+.lastSI {
+	padding-right: 10px;
+}
+/* CSS menu i ikony dla "social" - end */
+
+#spaceOverMenu {
+	position: absolute;
+	width: 100%;
+	height: 49px;
+	z-index: 9998;
+	top: 0;
+	left: 0;
+	float: left;
+	}
+
+#container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	display: table;
+	float: left;
+}
+
+/* size of player buttons */
+@bw: 28px;
+@bh: @bw;
+
+#audiocontrol {
+	position: fixed;
+	top: 54px;
+	left: 10px;
+	width: @bw;
+	height: @bh;
+	background: green;
+	z-index: 9999999999;
+	overflow: hidden;
+}
+
+#player-play, #player-stop {
+width: @bw;
+height: @bh;
+position: absolute;
+top: 0;
+left: 0;
+float: left;
+display: inline-block;
+}
+
+#logo {
+	opacity: 1;
+	z-index: 4;
+	overflow: visible;
+	position: absolute;
+}
+
+#filter {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background: #000;
+	z-index: 999999;
+}
+
+#img_logo {
+	top: 50%;
+	left: 50%;
+	margin: -15% -40%;
+	max-width: 80%;
+	max-height: 80%;
+	position: relative;
+}
+
+@itemsMargin: 5%;
+@stopro: 100%;
+
+/* positions */
+#logo, #item1, #item2, #item3, #item4, #item5 {
+	top: @itemsMargin*2;
+	left: @itemsMargin*2;
+	right: @itemsMargin*2;
+	bottom: @itemsMargin;
+	width: @stopro+(-@itemsMargin*4);
+	height: @stopro+(-@itemsMargin*3);
+	box-sizing: border-box;
+}
+
+#item1, #item2, #item3, #item4, #item5 {
+	position: relative;
+	display: none;
+	overflow: auto;
+	opacity: 1;
+}
+
+.itemBckgrnd, .inItem {
+	width: @w;
+	height: @h;
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.itemBckgrnd {
+	z-index: 6;
+	opacity: 0.8;
+	background: #000;
+}
+
+.inItem {
+	padding: 20px;
+	z-index: 7;
+	color: @white;
+	transition: 1000ms;
+}
+
+/* do funkcji hideAllPages() - nie ruszać! */
+.hide {
+	opacity: 0;
+	display: none;
+}
+/* do funkcji hideAllPages() - end */
+
+@defaultFont: 14px;
+
+h3 {
+	color: @white;
+	font-size: 18px;
+	margin: 12px 0;	
+	font-weight: bold;
+	font-family: 'Sarpanch', sans-serif;
+	display: inline-block;
+	float: left;
+	width: 100%;
+}
+
+h3.firsth3 {
+	margin: 0 0 12px 0;	
+}
+
+p.default {
+	color: @white;
+	font-size: @defaultFont;
+	font-family: arial;
+	margin-bottom: 12px;
+}
+
+.albums {
+	max-width: 25%; /* 100%!!! */
+	min-height: 25%; /* do usuniecia!!*/
+	float: left;
+	/* margin-bottom: 2%; */
+	position: relative;
+}
+
+@coversize: 100%;
+
+.albumcovers {
+	width: @coversize;
+	height: @coversize;
+	margin-right: 2%;
+	float: left;
+	position: relative;
+}
+
+.albumtitle {
+	font-size: 16px;
+	color: #ff8000;
+	font-weight: bold;
+	font-family: 'Sarpanch', sans-serif;
+	text-transform: uppercase;
+}
+
+.albumsdate {
+	color: #c0c0c0;
+	font-size: 14px;
+}
+
+.albumscontent {
+	width: 98%-(@coversize);
+	float: left;
+	position: relative;
+	display: none; /* do usuniecia!! */
+}
+
+.tracklist {
+	max-width: 100%;
+}
+
+.tracklist th {
+	text-align: center;
+}
+
+.tracklist td {
+	padding: 2px 7px;
+}
+
+.tracklist, .tracklist th, .tracklist td, .tracklist tr {
+	color: @white;
+	font-size: @defaultFont;
+	font-family: arial;
+	border: 1px;
+	border-collapse: collapse;
+}
+
+.tracklist tr:hover td {
+	background: #5d5d5d;
+}
+
+address {
+	color: @white;
+	font-size: @defaultFont;
+	font-family: arial;
+	float: right;
+	margin: 15px;
+	text-align: left;
+}
+
+address a, a:visited, a:active {
+	color: @orange;
+}
+
+dt, dd {
+color: @white;
+font-size: @defaultFont;
+font-family: arial;
+opacity: 1;
+}
+
+dt {
+font-weight: bold;
+margin: 12px 0 10px 10px;
+color: #ffa975;
+}
+
+@footerHeight: 14px;
+
+footer {
+	width: 100%;
+	height: @footerHeight;
+	float: left;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	margin: 0;
+}
+
+#foot {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: @bgmenu;
+	opacity: 1;
+}
+
+#footer {
+	width: 100%;
+	height: @footerHeight;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-family: calibri;
+	font-size: 10px;
+	color: @white;
+}
