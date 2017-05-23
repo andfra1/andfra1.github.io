@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style_1.css?111">
+    <title>Weekly WebDev Challenge #1</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="logo2.png" alt="masterlab">
+    </header>
+    <div id="content">
+        <div class="column">
+            <h1>
+            Register Form
+            </h1>
+            <div class="formBorder">
+                <form id="register">
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        person
+                        </i>
+                        </div>
+                        <input type="text" placeholder="Username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        lock
+                        </i>
+                        </div>
+                        <input type="password" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        lock
+                        </i>
+                        </div>
+                        <input type="password" placeholder="Confirm Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        email
+                        </i>
+                        </div>
+                        <input type="email" placeholder="Email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        room
+                        </i>
+                        </div>
+                        <select id="location" name="location">
+                            <option value="default" selected>
+                                Your location
+                            </option>
+                            <option value="paris">
+                                Paris
+                            </option>
+                            <option value="london">
+                                London
+                            </option>
+                            <option value="berlin">
+                                Berlin
+                            </option>
+                            <option value="amsterdam">
+                                Amsterdam
+                            </option>
+                            <option value="poland">
+                                Small village somwere in south-east Poland
+                            </option>
+                        </select>
+                    </div>
+                    <div class="checkboxWrapper">
+                        <input id="termsOfUse" type="checkbox" required><span></span>
+                        <label for="termsOfUse">
+                            I have read and accept a terms of use.
+                        </label>
+                    </div>
+                    <button id="signUp" type="submit" value="sign up">
+                        Sign up
+                    </button>
+                </form>
+            </div>
+            <h1>
+            Send Email
+            </h1>
+            <div class="formBorder">
+                <form id="sendEml">
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        person
+                        </i>
+                        </div>
+                        <input type="text" placeholder="Your Name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        email
+                            </i>
+                        </div>
+                        <input type="email" placeholder="Your Email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
+                    </div>
+                    <div class="inputWrapper">
+                        <textarea title="Message field" placeholder="Type your message..." required></textarea>
+                    </div>
+                    <div class="checkboxWrapper">
+                        <input type="checkbox" id="sendACopy"><span></span>
+                        <label for="sendACopy">
+                            Send a copy to my email
+                        </label>
+                    </div>
+                    <button type="submit" id="sendEmail" value="send email">
+                        Send Email
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!--
+     -->
+        <div class="column">
+            <h1>
+            Sign in
+            </h1>
+            <div class="formBorder">
+                <form id="signin">
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        person
+                        </i>
+                        </div>
+                        <input type="text" placeholder="Username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                        lock
+                        </i>
+                        </div>
+                        <input type="password" placeholder="Password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                    </div>
+                    <div class="formBottom">
+                        <div class="checkboxWrapper">
+                            <input type="checkbox" id="rememberMe"><span></span>
+                            <label class="checkbox_label" for="rememberMe">
+                                Remember me
+                            </label>
+                        </div>
+                        <button type="submit" id="signIn">
+                            Sign in
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <h1>Recover</h1>
+            <div class="formBorder">
+                <form>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                                person
+                            </i>
+                        </div>
+                        <input type="text" placeholder="Enter your name" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
+                    </div>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                                phone
+                            </i>
+                        </div>
+                        <input type="tel" placeholder="Enter your phone number" pattern="^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$" title="ssij" required>
+                    </div>
+                    <button type="submit" id="send">
+                        Send
+                    </button>
+                    <button type="submit" id="done" disabled>
+                        Done
+                    </button>
+                </form>
+            </div>
+            <h1>
+            Subscribe
+            </h1>
+            <div class="formBorder">
+                <form>
+                    <div class="inputWrapper">
+                        <div class="inputIcon">
+                            <i class="material-icons">
+                                email
+                            </i>
+                        </div>
+                        <input type="email" placeholder="Enter your Email" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" required>
+                    </div>
+                    <button type="submit" id="subscribe">
+                        Subscribe
+                    </button>
+                    <button type="submit" id="noThanks">
+                        No, Thanks
+                    </button>
+                </form>
+            </div>
+            <img id="logobottom" src="logom.png" alt="masterlab logo">
+        </div>
+    </div>
+</body>
+
+</html>
