@@ -5,145 +5,503 @@
     <meta charset="UTF-8">
     <meta name="description" content="">
     <meta name="keywords" content="">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Roboto:300,400,700" rel="stylesheet"> 
+   
+     <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+   
     <!--external css-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="data/style.css">
     <!--LESS file-->
-    <link rel="stylesheet/less" href="style.less">
+    <link rel="stylesheet/less" href="data/style.less">
     <script src="E:/www/____skrypty/less.js" type="text/javascript"></script>
-    
     <title>Franciszek Andruszkiewicz - portfolio</title>
 </head>
 
 <body>
-    <div class="wrapper wrapper-paddingTop">
-        <header>
-            <div class="header" id="header">
-                <div class="wrapper">
-                    <div class="content">
-                        <div class="logo">
-                            Franciszek Andruszkiewicz
-                        </div>
-                        <nav>
-                            <button id="hamburger" class="hamburger">
-                       <span class="stripe"></span>
-                       <span class="stripe"></span>
-                       <span class="stripe"></span>
+    <div id="cursorBlow" class="cursorBlow"></div>
+    <div id="wrapper">
+        <header id="header">
+            <div class="header_content">
+                <a href="http://andfra1.github.io" class="header_content-link">
+                    <div class="header_content-name"><!--
+                        --><span>and</span><span>ruszkiewicz</span><!--
+                    --></div><!--
+                    --><div class="header_content-name"><!--
+                        --><span>fra</span><span>nciszek</span><!--
+                    --></div>
+                </a>
+                <nav>
+            <ul class="main-menu" id="main-menu">
+                <li class="items" id="omnie">
+                    <a href="#">
+                        o mnie
+                    </a>
+                </li>
+                <!--
+            -->
+                <li class="items" id="portfolio">
+                    <a href="#">
+                        porftolio
+                    </a>
+                </li>
+                <!--
+            -->
+                <li class="items" id="kontakt">
+                    <a href="#">
+                        kontakt
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+                <button id="hamburger" class="header_content-hamburger">
+                      <span class="hamburger-text">menu</span>
+                       <span class="hamburger-stripe"></span>
+                       <span class="hamburger-stripe"></span>
+                       <span class="hamburger-stripe"></span>
                     </button>
-                            <ul class="menu" id="menu-main">
-                                <li class="menu-item"><a href="#omnie">
-                                o mnie
-                                </a></li>
-                                <li class="menu-item"><a href="#portfolio">
-                                portfolio
-                                </a></li>
-                                <li class="menu-item"><a href="#contact">
-                                kontakt
-                                </a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
             </div>
         </header>
-        <div class="content" id="omie">
-            Cześć nazywam się Franek.
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat corrupti necessitatibus velit, dolores, omnis sequi repudiandae temporibus culpa doloribus modi impedit qui quis eveniet eius quo quos odit neque, nam.</p>
-            <p>Rerum debitis velit minus similique, dicta quidem esse expedita adipisci omnis atque saepe eveniet veritatis laborum voluptatibus sit, hic aspernatur voluptate amet asperiores dolorum. Saepe recusandae quae ratione explicabo facere!</p>
-        </div>
-        <article>
-            <div class="content">
-                <div class="whatIKnow">
-                    <h2>Co znam:</h2>
-                    <ul class="list">
-                        <li>HTML5</li>
-                        <li>CSS3 (LESS)</li>
-                        <li>VanillaJS (podstawy)</li>
-                        <li>RWD / AWD / Bootstrap</li>
-                        <li>Github (podstawy)</li>
-                        <li>Photoshop (grafika, cięcie PSD)</li>
-                    </ul>
-                </div><!--
-                
-                --><div class="whatIWantToKnow">
-                    <h2>Co chcę poznać:</h2>
-                    <ul class="list">
-                        <li>Gulp</li>
-                        <li>Frameworki
-                            <ul class="sublist">
-                                <li>jQuery</li>
-                                <li>AngularJS</li>
+        <div class="line-default" id="line"></div>
+
+        <article class="article">
+            <section class="content" id="omnie-container">
+                <p class="content_p">
+                    Cześć!<br> Nazywam się <strong>Franciszek Andruszkiewicz</strong>. Od 10-ciu lat zawodowo zajmuję się szeroko rozumianą sprzedażą. Tak zaczęła się moja kariera zaraz po ukończeniu liceum, jednak nie jest to co chciałbym robić całe życie. Nadszedł czas na zmiany.
+                </p>
+                <p class="content_p content_read-more">
+                    <strong>Front-end</strong> pasjonował mnie już w wieku 15-stu lat. <a href="https://pl.wikipedia.org/wiki/Pawe%C5%82_Wimmer">Paweł Wimmer</a> był wtedy moim guru. HTML i CSS miałem w małym palcu. Zrobiłem kilka lub kilkanaście stron www (typu 'homepage') dla znajomych. Po dwóch latach zboczyłem z kursu nie wierząc, że umiejętności, które posiadałem w tamtym czasie były wystarczające, żeby wybić się zawodowo.
+                </p>
+                <p class="content_p content_read-more">
+                    Obecnie dzielnie stawiam czoło wszelkim przez siebie postawionym wyzwaniom. Śledzę bacznie rynek pracy, wymagania jakie są stawiane przez pracodawców, grupy tematyczne na FB czy też różnego rodzaju challenge. Znajomość <strong>JavaScript</strong> (Vanilla JS)jest dla mnie kluczowa. Dlatego jQuery i Angulara chcę poznać, kiedy już swobodnie będę czuł się w JS.
+                </p>
+                <p class="content_p content_read-more">
+                    W najbliższym czasie chcę również opanować PHP, SQL (wraz z nimi Word Press i PrestaShop) oraz narzędzia tj. Gulp, które ułatwią i przyspieszą pracę. Dając sobie również możliwość podniesienia kwalifikacji i aspiracji na full-stack developera.
+                </p>
+                <button id="content_read-more-button" class="content_read-more-button" value="on">
+                Urzekła mnie Twoja historia
+                </button>
+                <p class="content_p">
+                    Poniżej przedstawiam opis tego co umiem i z czego korzystam. W zakładce <a href="">portfolio</a> można również zobaczyć efekty niżej opisanych umiejętności.
+                </p>
+                <div class="lists-container">
+                <dl class="dl-list html-list">
+                    <dt class="dl-list_dt html-list_header">
+                    HTML - 80%
+                    <img src="data/img/html5-color.png" alt="html logo" class="dl-list_image dl-list_image-html">
+                    </dt>
+                    <dd class="dl-list_dd html-list_item">
+                        tagi HTML5
+                    </dd>
+                    <dd class="dl-list_dd html-list_item">
+                        semantyka i pozycjonowanie (SEO)
+                    </dd>
+                    <dd class="dl-list_dd html-list_item">
+                        Model Obiektowy (DOM)
+                    </dd>
+                    <dd class="dl-list_dd html-list_item">
+                        formularze i listingi
+                    </dd>
+                    <dd class="dl-list_dd html-list_item">
+                        elementy blokowe i liniowe
+                    </dd>
+                    <dd class="dl-list_dd html-list_item">
+                        osadzanie grafiki i multimediów
+                    </dd>
+                    <dd class="dl-list_dd html-list_item">
+                        ramki i pływające ramki
+                    </dd>
+                </dl>
+                <dl class="dl-list css-list">
+                    <dt class="dl-list_dt css-list_header">
+                    CSS - 70%
+                    <img src="data/img/css3-color.png" alt="css logo" class="dl-list_image dl-list_image-css">
+                </dt>
+                   <dd class="dl-list_dd css-list_item">
+                        kaskadowość i dziedziczenie
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        media queries (RWD / AWD)
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        Model Obiektowy (DOM)
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        animacje i transformacje
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        marginesy, odstępy, obramowanie, cieniowanie
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        kolory, tło
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        selektory (+ selektory pseudoklas i pseudoelementów)
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        właściwości tekstu i czcionek
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        wyświetlanie i pozycjonowanie
+                    </dd>
+                    <dd class="dl-list_dd css-list_item">
+                        jednostki miary i rozmiary
+                    </dd>
+                </dl>
+                <dl class="dl-list js-list">
+                    <dt class="dl-list_dt js-list_header">
+                    JavaScript - 30%
+                    <img src="data/img/js5-color.png" alt="js logo" class="dl-list_image dl-list_image-js">
+                    </dt>
+                    <dd class="dl-list_dd js-list_item">
+                        typy danych
+                    </dd>
+                    <dd class="dl-list_dd js-list_item">
+                        zmienne
+                    </dd>
+                    <dd class="dl-list_dd js-list_item">
+                        operatory (przypisania, porównania, logiczne)
+                    </dd>
+                    <dd class="dl-list_dd js-list_item">
+                        instrukcje warunkowe i pętle
+                    </dd>
+                    <dd class="dl-list_dd js-list_item">
+                        funkcje
+                    </dd>
+                    <dd class="dl-list_dd js-list_item">
+                        tablice
+                    </dd>
+                    <dd class="dl-list_dd js-list_item">
+                        obiekty
+                    </dd>
+                    <dd class="dl-list_dd js-list_item">
+                        obsługa zdarzeń i elementów strony
+                    </dd>
+                    <dd class="dl-list_dd js-list_item">
+                        RegExp (podstawy)
+                    </dd>
+                    
+                </dl>
+                <dl class="dl-list atwork-list">
+                    <dt class="dl-list_dt atwork-list_header">
+                        Do pracy wykorzystuję:
+                        <img src="data/img/atwork.png" alt="w pracy logo">
+                    </dt>
+                    <dd class="dl-list_dd atwork-list_item">
+                        LESS
+                    </dd>
+                    <dd class="dl-list_dd atwork-list_item">
+                        Bootstrap (początki)
+                    </dd>
+                    <dd class="dl-list_dd atwork-list_item">
+                        BEM (początki)
+                    </dd>
+                    <dd class="dl-list_dd atwork-list_item">
+                        Brackets (z pluginem Emmet i JSLint)
+                    </dd>
+                    <dd class="dl-list_dd atwork-list_item">
+                        Photoshop (tworzenie elementów strony oraz cięcie grafiki)
+                    </dd>
+                    <dd class="dl-list_dd atwork-list_item">
+                        W3C Validator
+                    </dd>
+                </dl>
+                <dl class="dl-list inspiration-list">
+                    <dt class="dl-list_dt inspiration-list_header">
+                    Inspirują mnie:
+                    </dt>
+                    <dd class="dl-list_dd inspiration-list_item">
+                    Tomasz Jakut (<a href="https://www.comandeer.pl/">Comandeer</a>)
+                    </dd>
+                    <dd class="dl-list_dd inspiration-list_item">
+                    Damian Wielgosik (<a href="http://kodu.je/">Kodu.je</a>, <a href="http://ferrante.pl/">Ferrante</a>)
+                    </dd>
+                    <dd class="dl-list_dd inspiration-list_item">
+                    Cris Coyier &amp; <a href="https://css-tricks.com/">CSS-Tricks</a>
+                    </dd>
+                    <dd class="dl-list_dd inspiration-list_item">
+                    <a href="https://www.awwwards.com/">Awwwards
+                    </a>
+                    </dd>
+                    <dd class="dl-list_dd inspiration-list_item">
+                    użytkownicy 
+                    <a href="https://web.facebook.com/groups/1485218891734165/?fref=ts">
+                    Front-end: pierwsza praca w HTML5, CSS3 i JavaScript
+                    </a>
+                    , na których błędach dużo się uczę :)
+                    </dd>
+                </dl>
+                </div>
+                <p class="find-me_p">
+                    Można mnie znaleźć również na:</p>
+                <ul class="find-me_list">
+                    <li class="find-me_list-item find-me_list-item-github">
+                        <a href="https://github.com/andfra1" target="_blank">
+                            github
+                        </a>
+                    </li>
+                    <li class="find-me_list-item find-me_list-item-codepen">
+                        <a href="http://codepen.io/andfra/pens/public/#" target="_blank">
+                            codepen
+                        </a>
+                    </li>
+                    <li class="find-me_list-item find-me_list-item-stack">
+                        <a href="http://stackoverflow.com/users/3213002/andfra" target="_blank">
+                            stackoverflow
+                        </a>
+                    </li>
+                    <li class="find-me_list-item find-me_list-item-fb">
+                        <a href="https://web.facebook.com/franciszekandruszkiewicz.1986" target="_blank">
+                            facebook
+                        </a>
+                    </li>
+                </ul>
+            </section>
+            <section class="content" id="portfolio-container">
+                    <div class="portfolio-imageNtext">
+                        <div class="portfolio-image"><figure class="portfolio-image-fig"><img src="data/img/dieantwoord.jpg" alt="Strona Die Antwoord"><figcaption class="portfolio-image-fig-figcap">
+                                    <a href="#" class="figcap-a figcap-a-link">
+                                    wyświetl stronę
+                                    </a>
+                                    <br>
+                                    <a href="#" class="figcap-a figcap-a-source">
+                                    kod
+                                    </a>
+                                </figcaption></figure></div>
+                        <div class="portfolio-text">
+                            <h2>
+                            Die Antwoord
+                            </h2>
+                            <p>
+                                Strona fanów zespołu pochodzącego z RPA, który tworzy muzykę na pograniczu gangsta-rap, hip-hop, techno i rave.<br>
+                                Wykorzystano:
+                                </p>
+                            <ul>
+                                <li>
+                                HTML
+                                </li>
+                                <li>
+                                   CSS
+                                </li>
+                                <li>
+                                JS
+                                </li>
                             </ul>
-                        </li>
-                        <li>PHP</li>
-                            <li>CMS'y
-                                <ul class="sublist">
-                                    <li>Wordpress</li>
-                                    <li>PrestaShop</li>
+                        </div>
+                    </div>
+                    <!--
+                    -->
+                    <div class="portfolio-imageNtext">
+                        <div class="portfolio-image">
+                            <figure class="portfolio-image-fig">
+                                <img src="data/img/hairsalon.jpg" alt="Strona Hair Salon">
+                                <figcaption class="portfolio-image-fig-figcap">
+                                    <a href="#" class="figcap-a figcap-a-link">
+                                    wyświetl stronę
+                                    </a>
+                                    <br>
+                                    <a href="#" class="figcap-a figcap-a-source">
+                                    kod
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2>
+                            Hair Salon
+                            </h2>
+                            <p>
+                                Projekt polegający na pocięciu PSD i zakodowaniu strony.<br> Wykorzystano:
+                            </p>
+                            <ul>
+                                <li>
+                                HTML
+                                </li>
+                                <li>
+                                   CSS
+                                    <ul>
+                                        <li>
+                                        RWD
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                JS
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-imageNtext">
+                        <div class="portfolio-image">
+                            <figure class="portfolio-image-fig">
+                                <img src="data/img/form.jpg" alt="Formularz zrobiony w ramach Weekly Webdev Challenge">
+                                <figcaption class="portfolio-image-fig-figcap">
+                                    <a href="#" class="figcap-a figcap-a-link">
+                                    wyświetl stronę
+                                    </a>
+                                    <br>
+                                    <a href="#" class="figcap-a figcap-a-source">
+                                    kod
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2>
+                            Form
+                            </h2>
+                            <p>
+                                Pierwsza praca wykonana w ramach 
+                                <a href="https://web.facebook.com/groups/940002776068923/?ref=ts&fref=ts">
+                                Weekly Webdev Challenge
+                                </a><br>
+                                Wykorzystano:</p>
+                            <ul>
+                                <li>
+                                HTML
+                                </li>
+                                <li>
+                                CSS
+                                </li>
+                                <ul>
+                                    <li>
+                                    walidacja formularzy
+                                    </li>
                                 </ul>
-                            </li>
-                            <li>SQL</li>
-                    </ul>
-                </div>
-                <div class="links" id="portfolio">
-                    <h2>Zobacz co zrobiłem do tej pory:</h2>
-                    <ul class="whatHaveIDone">
-                        <li><a href="https://codepen.io/andfra/"target="_blank">Codepen</a></li>
-                        <li><a href="https://github.com/andfra1"target="_blank">Github</a></li>
-                        <li><a href="http://stackoverflow.com/users/3213002/andfra" target="_blank">Stackoverflow</a></li>
-                    </ul>
-                </div>
-            </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-imageNtext">
+                        <div class="portfolio-image">
+                            <figure class="portfolio-image-fig">
+                                <img src="data/img/blog1.jpg" alt="Strona Blog1">
+                                <figcaption class="portfolio-image-fig-figcap">
+                                    <a href="#" class="figcap-a figcap-a-link">
+                                    Wyświetl stronę
+                                    </a>
+                                    <br>
+                                    <a href="#" class="figcap-a figcap-a-source">
+                                    kod
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2>Blog#1</h2>
+                            <p>
+                                Strona główna bloga bazująca na witrynie <a href="http://jarock.pl/">jarock.pl</a>.
+                                <br> Wykorzystano:</p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-imageNtext">
+                        <div class="portfolio-image">
+                            <figure class="portfolio-image-fig">
+                                <img src="data/img/andfra.jpg" alt="To portfolio">
+                                <figcaption class="portfolio-image-fig-figcap">
+                                    <a href="#" class="figcap-a figcap-a-link">
+                                    wyświetl stronę
+                                    </a>
+                                    <br>
+                                    <a href="#" class="figcap-a figcap-a-source">
+                                    kod
+                                    </a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2>Portfolio andfra</h2>
+                            <p>
+                                Najświeżysz projekt wykonany od podstaw.
+                                <br> Wykorzystano:
+                            </p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS
+                                    <ul>
+                                        <li>RWD</li>
+                                    </ul>
+                                </li>
+                                <li>JS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-imageNtext">
+                        <div class="portfolio-image">
+                            <figure class="portfolio-image-fig">
+                                <img src="https://digitalsynopsis.com/wp-content/uploads/2014/03/how-to-create-a-website-feature-image.jpg" alt="">
+                                <figcaption class="portfolio-image-fig-figcap">
+                                    <a href="#" class="figcap-a figcap-a-link">
+                                    zobacz grę i kod</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2>Simon Say v0.9</h2>
+                            <p>
+                                Popularna gra wykonana od podstaw.<br> Pomysł wymaga dopracowania. Obecnie komputer wskazuje ostatni wylosowany element, a nie wszystkie elementy wylosowane kolejno po sobie.
+                                <br> Wykorzystano:
+                            </p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="portfolio-imageNtext">
+                        <div class="portfolio-image">
+                            <figure class="portfolio-image-fig">
+                                <img src="https://digitalsynopsis.com/wp-content/uploads/2014/03/how-to-create-a-website-feature-image.jpg" alt="">
+                                <figcaption class="portfolio-image-fig-figcap">
+                                    <a href="#" class="figcap-a figcap-a-link">
+                                    zobacz grę i kod</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="portfolio-text">
+                            <h2>Shooter</h2>
+                            <p>
+                                Gra bazująca na popularnej grze z NES'a.
+                                <br> Wykorzystano:
+                            </p>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JS</li>
+                            </ul>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="content" id="kontakt-container">
+               <ul class="contact-list">
+               <li class="contact-list_item">
+                <span class="contact-list_item_span">tel: </span><a href="tel:+48886552562" class="contact-list_item-tel">+48 886 552 562</a>
+                </li>
+                <li class="contact-list_item">
+                <span class="contact-list_item_span">e-mail: </span><a href="mailto:fandruszkiewicz@gmail.com" class="contact-list_item-mail">fandruszkiewicz[at]gmail.com</a>
+                </li>
+                <li class="contact-list_item">
+                <figure class="qrcode">
+                <figcaption class="qrcode_caption">Skanuj kod lub dotknij:</figcaption>
+                <a href="data/andfra_vcard.vcf" download>
+                <img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=BEGIN%3AVCARD%0AVERSION%3A2.1%0AFN%3AFranciszek+Andruszkiewicz%0AN%3AAndruszkiewicz%3BFranciszek%0ATEL%3BHOME%3BVOICE%3A%2B48886552562%0AEMAIL%3BHOME%3BINTERNET%3Afandruszkiewicz%40gmail.com%0AURL%3Ahttps%3A%2F%2Fandfra1.github.io%2F%0AEND%3AVCARD%0A&amp;qzone=1&amp;margin=0&amp;ecc=L" alt="QR code" class="qrcode_img">
+                </a>
+                </figure>
+                </li>
+                </ul>
+            </section>
         </article>
-        <div class="content contact" id="contact">
-            <address>
-            <div class="contact">
-            <span class="contact-tel">tel: 
-            <a href="tel:+48886552562">
-            +48 886 552 562
-            </a>
-            </span>
-            <span class="contact-mail">e-mail: <a href="mailto:fandruszkiewicz@gmail.com">
-            fandruszkiewicz@gmail.com</a></span>
-            </div>
-	<img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=BEGIN%3AVCARD%0AVERSION%3A2.1%0AFN%3AFranciszek+Andruszkiewicz%0AN%3AAndruszkiewicz%3BFranciszek%0ATEL%3BHOME%3BVOICE%3A%2B48886552562%0AEMAIL%3BHOME%3BINTERNET%3Afandruszkiewicz%40gmail.com%0AURL%3Ahttps%3A%2F%2Fandfra1.github.io%2F%0AEND%3AVCARD%0A&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" alt="qr code" class="qrcode">
-            </address>
-        </div>
-        <footer>
-            <div class="content footer">
-                No one rights is reserved. <span class="copy">&copy;</span> Copyleft by <a href="mailto:fandruszkiewicz@gmail.com">Franciszek Andruszkiewicz</a>
-            </div>
-        </footer>
     </div>
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- wrapper end -->
 
-  ga('create', 'UA-98097944-1', 'auto');
-  ga('send', 'pageview');
-
-        
-        var header = document.getElementById('header');
-        var hamburgerBttn = document.getElementById('hamburger');
-        var menuCopy = document.getElementById('menu-main').innerHTML;
-        
-        var openMenu = function() {
-            var hambMenu = document.createElement('div');
-            hambMenu.className = 'hamburger-menu';
-            hambMenu.innerHTML = menuCopy;
-            header.appendChild(hambMenu);
-            if (hambMenu.style.display === 'block') {
-                hambMenu.style.display = null;
-            } else {
-                hambMenu.style.display = 'block';
-            }
-        }
-        }
-        
-        hamburgerBttn.addEventListener('click', openMenu, false);
-</script>
+    <script src="data/script.js " type="text/javascript "></script>
 </body>
-
 </html>

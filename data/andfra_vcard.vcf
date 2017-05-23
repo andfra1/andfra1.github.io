@@ -1,0 +1,15 @@
+BEGIN:VCARD
+VERSION:3.0
+CLASS:PUBLIC
+PRODID:-//TAAT PHP vCard Class//NONSGML Version 1//SE
+REV:2017-05-23
+TZ:+0200
+FN:Franciszek Andruszkiewicz
+N:Andruszkiewicz,Franciszek
+NICKNAME:andfra
+SORTSTRING:Andruszkiewicz
+TEL;TYPE=VOICE,CELL:+48886552562
+URL:andfra1.github.io
+ADR;TYPE=HOME,POSTAL,PARCEL:;;;Poznan;Polska
+LABEL;TYPE=DOM,HOME,POSTAL,PARCEL:Poznan\r\nPolska
+END:VCARD
