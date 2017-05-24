@@ -6,7 +6,6 @@
     <meta name="description" content="Franciszek Andruszkiewicz portfolio. Zapraszam.">
     <meta name="keywords" content="Franciszek Andruszkiewicz, franciszek, andruszkiewicz, portfolio, poznań, front-end, praca, strony, internetowe, www, szuka, szukam, pracy, portfolia, początkujący, full, stack, js, java, script, html, css, html5, css3, php, sql, prospekt, poznań, fb, stackoverflow, github, codepen, javascript, less, bootstrap">
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa:300,400,700|Roboto:300,400,700" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -35,10 +34,9 @@
 
 <body>
     <div id="cursorBlow" class="cursorBlow"></div>
-    <div id="wrapper">
-    </div>
     <div id="bg">
-
+    </div>
+    <div id="wrapper">
         <header id="header">
             <div class="header_content">
                 <a href="http://andfra1.github.io" class="header_content-link">
@@ -95,8 +93,11 @@
         <div class="line-default line-text-default" id="line"></div>
         <article class="article">
             <section class="content" id="omnie-container">
+              <div class="omnie-container_first-row">
+               <img src="data/img/site/face.png" class="main-photo" alt="Franciszek Andruszkiewicz - foto">
+                <h1 class="content_h1">Cześć!</h1>
                 <p class="content_p">
-                    Cześć!<br> Nazywam się <strong>Franciszek Andruszkiewicz</strong>. Od 10-ciu lat zawodowo zajmuję się szeroko rozumianą sprzedażą. Tak zaczęła się moja kariera zaraz po ukończeniu liceum, jednak nie jest to co chciałbym robić całe życie. Nadszedł czas na zmiany.
+                    Nazywam się <strong>Franciszek Andruszkiewicz</strong>. Jestem początkującym front-end developerem i szukam pracy/stażu w Poznaniu na takim stanowisku. Za sobą mam 10 lat pracy nie specjalnie związanej z IT czy pokrewnymi. Nadszedł czas na zmiany.
                 </p>
                 <p class="content_p content_read-more">
                     <strong>Front-end</strong> pasjonował mnie już w wieku 15-stu lat. <a href="https://pl.wikipedia.org/wiki/Pawe%C5%82_Wimmer">Paweł Wimmer</a> był wtedy moim guru. HTML i CSS miałem w małym palcu. Zrobiłem kilka lub kilkanaście stron www (typu 'homepage') dla znajomych. Po dwóch latach zboczyłem z kursu nie wierząc, że umiejętności, które posiadałem w tamtym czasie były wystarczające, żeby wybić się zawodowo.
@@ -113,11 +114,17 @@
                 <p class="content_p">
                     Poniżej przedstawiam opis tego co umiem i z czego korzystam. W zakładce <a href="#" id="portfolio-link">portfolio</a> można również zobaczyć efekty niżej opisanych umiejętności.
                 </p>
+                </div>
+                <h2 class="content_h2">Co umiem, z czego korzystam:</h2>
                 <div class="lists-container">
                     <dl class="dl-list html-list">
                         <dt class="dl-list_dt html-list_header">
-                    HTML
-                    <img src="data/img/site/html5-color.png" alt="html logo" class="dl-list_image dl-list_image-html">
+                        <figure class="dl-list_dt_figure">
+                            <figcaption class="dl-list_dt_figcap">
+                            HTML
+                            </figcaption>
+                    <img src="data/img/site/html5-color.png" alt="html logo" class="dl-list_dt_figure-img dl-list_dt_figure-img-html">
+                        </figure>
                     </dt>
                         <dd class="dl-list_dd html-list_item">
                             tagi HTML5
@@ -143,8 +150,12 @@
                     </dl>
                     <dl class="dl-list css-list">
                         <dt class="dl-list_dt css-list_header">
-                    CSS
-                    <img src="data/img/site/css3-color.png" alt="css logo" class="dl-list_image dl-list_image-css">
+                        <figure class="dl-list_dt_figure">
+                            <figcaption class="dl-list_dt_figcap">
+                            CSS
+                            </figcaption>
+                    <img src="data/img/site/css3-color.png" alt="css logo" class="dl-list_dt_figure-img dl-list_dt_figure-img-css">
+                    </figure>
                 </dt>
                         <dd class="dl-list_dd css-list_item">
                             kaskadowość i dziedziczenie
@@ -179,8 +190,13 @@
                     </dl>
                     <dl class="dl-list js-list">
                         <dt class="dl-list_dt js-list_header">
-                    JavaScript
-                    <img src="data/img/site/js5-color.png" alt="js logo" class="dl-list_image dl-list_image-js">
+                        <figure class="dl-list_dt_figure">
+                            <figcaption class="dl-list_dt_figcap">
+                            JS
+                            </figcaption>
+                    <img src="data/img/site/js5-color.png" alt="js logo" class="dl-list_dt_figure-img dl-list_dt_figure-img-js">
+                    </figure>
+
                     </dt>
                         <dd class="dl-list_dd js-list_item">
                             typy danych
@@ -213,8 +229,11 @@
                     </dl>
                     <dl class="dl-list atwork-list">
                         <dt class="dl-list_dt atwork-list_header">
-                        Do pracy używam:
-                        <img src="data/img/site/atwork.png" alt="w pracy logo">
+                        <figure class="dl-list_dt_figure">
+                            <figcaption class="dl-list_dt_figcap">                        Do pracy używam:
+                            </figcaption>
+                        <img src="data/img/site/atwork.png" alt="w pracy logo" class="dl-list_dt_figure-img dl-list_dt_figure-img-atwork">
+                    </figure>
                     </dt>
                         <dd class="dl-list_dd atwork-list_item">
                             LESS
@@ -236,6 +255,7 @@
                         </dd>
                     </dl>
                     <dl class="dl-list inspiration-list">
+                       <h2 class="content_h2">Ponadto...</h2>
                         <dt class="dl-list_dt inspiration-list_header">
                     Inspirują, pomagają, uczą mnie:
                     </dt>
@@ -260,8 +280,9 @@
                         </dd>
                     </dl>
                 </div>
+                <h2 class="content_h2">To nie wszystko!</h2>
                 <p class="find-me_p">
-                    Można mnie znaleźć również na:</p>
+                    Znajdziesz mnie również na:</p>
                 <ul class="find-me_list">
                     <li class="find-me_list-item find-me_list-item-github">
                         <a href="https://github.com/andfra1" target="_blank">
@@ -286,6 +307,7 @@
                 </ul>
             </section>
             <section class="content" id="portfolio-container">
+               <h2 class="content_h2 content_h2_bigger">Portfolio</h2>
                 <div class="portfolio-imageNtext">
                     <div class="portfolio-image">
                         <figure class="portfolio-image-fig">
@@ -312,13 +334,19 @@
                         </p>
                         <ul class="portfolio-text_list">
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/html5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/html5ico.png" alt="HTML icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/css3-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/css3ico.png" alt="CSS3 icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/js5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/jsico.png" alt="JavaScript icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/lessico.png" alt="LESS icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/rwdico.png" alt="RWD icon" class="portfolio-text_list-item-img">
                             </li>
                         </ul>
                     </div>
@@ -349,12 +377,17 @@
                         </p>
                         <ul class="portfolio-text_list">
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/html5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/html5ico.png" alt="HTML icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/css3-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/css3ico.png" alt="CSS3 icon" class="portfolio-text_list-item-img">
                             </li>
-                        </ul>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/lessico.png" alt="LESS icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/rwdico.png" alt="RWD icon" class="portfolio-text_list-item-img">
+                            </li>                        </ul>
                     </div>
                 </div>
                 <div class="portfolio-imageNtext">
@@ -381,15 +414,20 @@
                         </p>
                         <ul class="portfolio-text_list">
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/html5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/html5ico.png" alt="HTML icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/css3-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/css3ico.png" alt="CSS3 icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/js5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/jsico.png" alt="JavaScript icon" class="portfolio-text_list-item-img">
                             </li>
-                        </ul>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/lessico.png" alt="LESS icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/rwdico.png" alt="RWD icon" class="portfolio-text_list-item-img">
+                            </li>                        </ul>
                     </div>
                 </div>
                 <div class="portfolio-imageNtext">
@@ -418,13 +456,19 @@
                         </p>
                         <ul class="portfolio-text_list">
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/html5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/html5ico.png" alt="HTML icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/css3-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/css3ico.png" alt="CSS3 icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/js5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/jsico.png" alt="JavaScript icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/lessico.png" alt="LESS icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/rwdico.png" alt="RWD icon" class="portfolio-text_list-item-img">
                             </li>
                         </ul>
                     </div>
@@ -457,10 +501,10 @@
                         </p>
                         <ul class="portfolio-text_list">
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/html5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/html5ico.png" alt="HTML icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/css3-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/css3ico.png" alt="CSS3 icon" class="portfolio-text_list-item-img">
                             </li>
                         </ul>
                     </div>
@@ -486,52 +530,20 @@
                         </p>
                         <ul class="portfolio-text_list">
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/html5-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/html5ico.png" alt="HTML icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/css3-color.png" alt="" class="portfolio-text_list-item-img">
+                                <img src="data/img/site/css3ico.png" alt="CSS3 icon" class="portfolio-text_list-item-img">
                             </li>
                             <li class="portfolio-text_list-item">
-                                <img src="data/img/site/js5-color.png" alt="" class="portfolio-text_list-item-img">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="portfolio-imageNtext">
-                    <div class="portfolio-image">
-                        <figure class="portfolio-image-fig">
-                            <img src="https://digitalsynopsis.com/wp-content/uploads/2014/03/how-to-create-a-website-feature-image.jpg" alt="">
-                            <figcaption class="portfolio-image-fig-figcap">
-                                <a href="https://codepen.io/andfra/pen/QvQqGp" class="figcap-a figcap-a-link" target="_blank">
-                                    zobacz grę i kod</a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="portfolio-text">
-                        <h2 class="portfolio-text_header">
-                            Shooter
-                        </h2>
-                        <p class="portfolio-text_paragraph">
-                            Gra bazująca na popularnej grze z NES'a.
-                        </p>
-                        <p class="portfolio-text_paragraph"> Wykorzystano:
-                        </p>
-                        <ul class="portfolio-text_list">
-                            <li class="portfolio-text_list-item">
-                                <img src="data/img/site/html5-color.png" alt="" class="portfolio-text_list-item-img">
-                            </li>
-                            <li class="portfolio-text_list-item">
-                                <img src="data/img/site/css3-color.png" alt="" class="portfolio-text_list-item-img">
-                            </li>
-                            <li class="portfolio-text_list-item">
-                                <img src="data/img/site/js5-color.png" alt="" class="portfolio-text_list-item-img">
-                            </li>
+                                <img src="data/img/site/jsico.png" alt="JavaScript icon" class="portfolio-text_list-item-img">
                         </ul>
                     </div>
                 </div>
             </section>
 
             <section class="content" id="kontakt-container">
+               <h2 class="content_h2 content_h2_bigger">Kontakt</h2>
                 <ul class="contact-list">
                     <li class="contact-list_item">
                         <span class="contact-list_item_span">tel: </span><a href="tel:+48886552562" class="contact-list_item-tel">+48 886 552 562</a>

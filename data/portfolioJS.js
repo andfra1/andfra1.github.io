@@ -1,7 +1,7 @@
 var items = document.getElementsByClassName('main-menu_items'),
     mainMenu = document.getElementById('main-menu'),
     line = document.getElementById('line'),
-    wrapper = document.getElementById('wrapper'),
+    bckgrnd = document.getElementById('bg'),
     hamburger = document.getElementById('hamburger'),
     content = document.getElementsByClassName('content'),
     readMoreBttn = document.getElementById('content_read-more-button'),
@@ -10,54 +10,42 @@ var items = document.getElementsByClassName('main-menu_items'),
 
 //return to default settings (default view)
 function defaultSet() {
-    line.className = '';
-    line.classList.add('line-default', 'line-text-default');
-    wrapper.style = '';
+    bckgrnd.style = '';
     for (var cntnt = 0; cntnt < content.length; cntnt++) {
         content[cntnt].style = '';
+        content[cntnt].style.opacity = '0';
     }
 }
 //default settings END <<<
 
 //view content
-function lineFullScreen() {
-    line.classList.remove('line-afterClick');
-    line.classList.add('line-fullScreen');
-    wrapper.style.opacity = '0.2';
-    wrapper.style.backgroundSize = '130%';
-    wrapper.style.transitionDelay = '0.3s';
+function viewContent() {
+    bckgrnd.style.opacity = '0.2';
+    bckgrnd.style.backgroundSize = '130%';
     for (var cntnt = 0; cntnt < content.length; cntnt++) {
+        content[cntnt].style.transform = 'scale(1)';
         content[cntnt].style.opacity = '1';
-        content[cntnt].style.transition = '1s';
-        content[cntnt].style.transitionDelay = '0.3s';
     }
 }
 //view content END <<<
 
-//that what elements do when user select an item from main menu (where ALL MAGIC begins!)
+//that what elements do when user select an item from main menu
 function afterClick() {
     defaultSet();
-    //changes style of line element
-    setTimeout(function () {
-        line.classList.remove('line-default');
-        line.classList.add('line-afterClick');
-    }, 500);
-    //set style block for selected content
+    line.classList.remove('line-default');
+    line.classList.add('line-blur');
     if (this === document.getElementById('omnie')) {
         content[0].style.display = 'block';
-        line.classList.add('line-text-omnie');
     } else if (this === document.getElementById('portfolio') || this === document.getElementById('portfolio-link')) {
         content[1].style.display = 'block';
-        line.classList.add('line-text-default');
     } else if (this === document.getElementById('kontakt')) {
         content[2].style.display = 'block';
-        line.classList.add('line-text-kontakt');
     } else {
         null;
     }
-    setTimeout(lineFullScreen, 700);
-    return false;
+    setTimeout(viewContent,400);
 }
+
 for (var i = 0; i < items.length; i++) {
     items[i].addEventListener('click', afterClick, false);
 }
@@ -67,39 +55,21 @@ document.getElementById('portfolio-link').addEventListener('click', afterClick, 
 // hamburger
 function hamburgerMenu() {
     if (hamburger.value === 'off') {
-        mainMenu.style.display = 'block';
+        mainMenu.classList.remove('displayNone');
+        mainMenu.classList.add('displayBlock');
         mainMenu.addEventListener('click', function () {
-            hamburger.value = 'on';
-            mainMenu.style.display = 'none';
+            hamburger.value = 'off';
+            mainMenu.classList.remove('displayBlock');
         }, false);
         hamburger.value = 'on';
-    } else {
-        mainMenu.style = 'none';
+    } else if (hamburger.value === 'on'){
+        mainMenu.classList.remove('displayBlock');
+        mainMenu.classList.add('displayNone');
         hamburger.value = 'off';
     }
 }
 hamburger.addEventListener('click', hamburgerMenu, false);
 //hamburger END <<<
-
-
-//fixed blinking circle after click
-function blinkCircle(ev) {
-    var posX = ev.clientX - 5;
-    var posY = ev.clientY - 5;
-    cursorBlow.style.top = posY + 'px';
-    cursorBlow.style.left = posX + 'px';
-    cursorBlow.classList.remove('cursorBlow');
-    cursorBlow.classList.add('cursorBlow-action');
-    setTimeout(function () {
-        //cursorBlow.style = '';
-        cursorBlow.classList.add('cursorBlow');
-        cursorBlow.classList.remove('cursorBlow-action');
-    }, 200);
-    return false;
-}
-wrapper.addEventListener('click', blinkCircle, false);
-//blink circle END <<<
-
 
 //read more toggle
 function readMoreToggle() {
