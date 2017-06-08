@@ -5,8 +5,7 @@ var items = document.getElementsByClassName('main-menu_items'),
     hamburger = document.getElementById('hamburger'),
     content = document.getElementsByClassName('content'),
     readMoreBttn = document.getElementById('content_read-more-button'),
-    readMoreContent = document.getElementsByClassName('content_read-more'),
-    cursorBlow = document.getElementById('cursorBlow');
+    readMoreContent = document.getElementsByClassName('content_read-more');
 
 //return to default settings (default view)
 function defaultSet() {
@@ -57,6 +56,7 @@ function hamburgerMenu() {
     if (hamburger.value === 'off') {
         mainMenu.classList.remove('displayNone');
         mainMenu.classList.add('displayBlock');
+        //listener - sets when user select an item from hamburger menu
         mainMenu.addEventListener('click', function () {
             hamburger.value = 'off';
             mainMenu.classList.remove('displayBlock');
@@ -92,7 +92,6 @@ function readMoreToggle() {
             readMoreContent[rm].style = '';
         }
     }
-    return false;
 }
 readMoreBttn.addEventListener('click', readMoreToggle, false);
 //read more END <<<
