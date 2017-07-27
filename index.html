@@ -27,7 +27,7 @@
         ga('send', 'pageview');
 
     </script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="data/portfolioCSS.css">
     <title>Franciszek Andruszkiewicz - portfolio</title>
 </head>
@@ -96,7 +96,7 @@
                <img src="data/img/site/face.png" class="main-photo" alt="Franciszek Andruszkiewicz - foto">
                 <h1 class="content_h1">Cześć!</h1>
                 <p class="content_p">
-                    Nazywam się <strong>Franciszek Andruszkiewicz</strong> i jestem początkującym front-end developerem. Obecnie szukam pracy lub stażu w Poznaniu jako programista. Do tej pory pracowałem na stanowiskach zupełnie niezwiązanych z branżą IT, jednak front-end pozostawał zawsze moim skrytym marzeniem. Nadszedł więc czas na zmiany.
+                    Nazywam się <strong>Franciszek Andruszkiewicz</strong> i jestem początkującym front-end developerem. Obecnie szukam pracy lub stażu w Poznaniu jako front-end developer. Do tej pory pracowałem na stanowiskach zupełnie niezwiązanych z branżą IT, jednak front-end pozostawał zawsze moim skrytym marzeniem. Nadszedł więc czas na zmiany.
                     </p>
                 <p class="content_p content_read-more">
                     Swoją przygodę z programowaniem zacząłem już w wieku 15 lat. Moim autorytetem był wówczas <a href="https://pl.wikipedia.org/wiki/Pawe%C5%82_Wimmer" target="_blank">Paweł Wimmer</a>. W tamtym czasie na wysokim poziomie opanowałem HTML i CSS, co umożliwiło mi przygotowanie kilkunastu stron www (typu „homepage”) dla znajomych. Niestety, krótkowzroczność wieku młodzieńczego, nie pozwoliła mi przewidzieć jak pożądanym zawodem stanie się w przyszłości front-end developer i po dwóch latach hobbystycznego zajmowania się projektowaniem stron, porzuciłem to zajęcie.
@@ -195,18 +195,12 @@
                         <dt class="dl-list_dt js-list_header">
                         <figure class="dl-list_dt_figure">
                             <figcaption class="dl-list_dt_figcap">
-                            JS
+                            VanillaJS / jQuery
                             </figcaption>
                     <img src="data/img/site/js5-color.png" alt="js logo" class="dl-list_dt_figure-img dl-list_dt_figure-img-js">
                     </figure>
 
                     </dt>
-                        <dd class="dl-list_dd js-list_item">
-                            typy danych
-                        </dd>
-                        <dd class="dl-list_dd js-list_item">
-                            zmienne
-                        </dd>
                         <dd class="dl-list_dd js-list_item">
                             operatory (przypisania, porównania, logiczne)
                         </dd>
@@ -217,10 +211,7 @@
                             funkcje
                         </dd>
                         <dd class="dl-list_dd js-list_item">
-                            tablice
-                        </dd>
-                        <dd class="dl-list_dd js-list_item">
-                            obiekty
+                            tablice i obiekty
                         </dd>
                         <dd class="dl-list_dd js-list_item">
                             obsługa zdarzeń i elementów strony
@@ -238,20 +229,26 @@
                         <img src="data/img/site/atwork.png" alt="w pracy logo" class="dl-list_dt_figure-img dl-list_dt_figure-img-atwork">
                     </figure>
                     </dt>
+                       <dd class="dl-list_dd atwork-list_item">
+                            <span class="atwork-new">Joomla!</span>
+                        </dd>
+                        <dd class="dl-list_dd atwork-list_item">
+                            <span class="atwork-new">Bootstrap</span>
+                        </dd>
                         <dd class="dl-list_dd atwork-list_item">
                             LESS
                         </dd>
                         <dd class="dl-list_dd atwork-list_item">
-                            Bootstrap (początki)
+                            Github (podstawy)
                         </dd>
                         <dd class="dl-list_dd atwork-list_item">
-                            BEM (początki)
+                            BEM
                         </dd>
                         <dd class="dl-list_dd atwork-list_item">
-                            Brackets (z pluginem Emmet i JSLint)
+                            Brackets + plg Emmet
                         </dd>
                         <dd class="dl-list_dd atwork-list_item">
-                            Photoshop (tworzenie elementów strony oraz cięcie grafiki)
+                            Photoshop (tworzenie elementów strony, cięcie grafiki)
                         </dd>
                         <dd class="dl-list_dd atwork-list_item">
                             W3C Validator
@@ -302,15 +299,152 @@
                             stackoverflow
                         </a>
                     </li>
-                    <li class="find-me_list-item find-me_list-item-fb">
-                        <a href="https://web.facebook.com/franciszekandruszkiewicz.1986" target="_blank">
-                            facebook
-                        </a>
-                    </li>
                 </ul>
             </section>
             <section class="content" id="portfolio-container">
                <h2 class="content_h2 content_h2_bigger">Portfolio</h2>
+                               <div class="portfolio-imageNtext">
+                    <div class="portfolio-image">
+                        <figure class="portfolio-image-fig">
+                            <img src="data/img/portfolio/blinh.jpg" alt="bling bling garage">
+                            <figcaption class="portfolio-image-fig-figcap">
+                                <a href="http://blingblinggarage.pl/" class="figcap-a figcap-a-link" target="_blank">
+                                    wyświetl stronę
+                                    </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="portfolio-text">
+                        <h2 class="portfolio-text_header">
+                            Bling bling garage (komercyjne)
+                        </h2>
+                        <p class="portfolio-text_paragraph">
+                            Strona wykonana od podstaw w Joomla!
+                        </p>
+                        <p class="portfolio-text_paragraph"> Wykorzystano:
+                        </p>
+                        <ul class="portfolio-text_list">
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-html5" aria-hidden="true"></i>
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-css3" aria-hidden="true"></i>
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-joomla" aria-hidden="true"></i>
+                        </ul>
+                    </div>
+                </div>
+                   <div class="portfolio-imageNtext">
+                    <div class="portfolio-image">
+                        <figure class="portfolio-image-fig">
+                            <img src="data/img/portfolio/mteam.jpg" alt="">
+                            <figcaption class="portfolio-image-fig-figcap">
+                                <a href="http://www.m-team-biurorachunkowe.pl/" class="figcap-a figcap-a-link" target="_blank">
+                                    wyświetl stronę
+                                    </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="portfolio-text">
+                        <h2 class="portfolio-text_header">
+                            M-Team Biuro rachunkowe (komercyjne)
+                        </h2>
+                        <p class="portfolio-text_paragraph">
+                            Strona wykonana od podstaw w Joomla!<br>
+                            Strona zawiera autorski slider wyświetlający tekst na stronie głównej.
+                        </p>
+                        <p class="portfolio-text_paragraph"> Wykorzystano:
+                        </p>
+                        <ul class="portfolio-text_list">
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-html5" aria-hidden="true"></i>
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-css3" aria-hidden="true"></i>
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-joomla" aria-hidden="true"></i>
+                        </ul>
+                    </div>
+                </div>
+                    <div class="portfolio-imageNtext">
+                    <div class="portfolio-image">
+                        <figure class="portfolio-image-fig">
+                            <img src="data/img/portfolio/wsm.jpg" alt="">
+                            <figcaption class="portfolio-image-fig-figcap">
+                                <a href="http://wsm2.hekko24.pl/" class="figcap-a figcap-a-link" target="_blank">
+                                    wyświetl stronę
+                                    </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="portfolio-text">
+                        <h2 class="portfolio-text_header">
+                            WSM (komercyjne, w trakcie)
+                        </h2>
+                        <p class="portfolio-text_paragraph">
+                            Strona wykonana od podstaw w Joomla!<br>
+                            Strona zawiera autorski slider wyświetlający obrazy na stronie głównej.
+                        </p>
+                        <p class="portfolio-text_paragraph"> Wykorzystano:
+                        </p>
+                        <ul class="portfolio-text_list">
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-html5" aria-hidden="true"></i>
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-css3" aria-hidden="true"></i>
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <i class="fa fa-joomla" aria-hidden="true"></i>
+                        </ul>
+                    </div>
+                </div>
+                <div class="portfolio-imageNtext">
+                    <div class="portfolio-image">
+                        <figure class="portfolio-image-fig">
+                            <img src="data/img/portfolio/hairsalon.jpg" alt="Strona Hair Salon">
+                            <figcaption class="portfolio-image-fig-figcap">
+                                <a href="https://andfra1.github.io/hairsalon/index.html" class="figcap-a figcap-a-link" target="_blank">
+                                    wyświetl stronę
+                                    </a>
+                                <br>
+                                <a href="https://github.com/andfra1/Hair-Salon" class="figcap-a figcap-a-source" target="_blank">
+                                    kod
+                                    </a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="portfolio-text">
+                        <h2 class="portfolio-text_header">
+                            Hair Salon
+                        </h2>
+                        <p class="portfolio-text_paragraph">
+                            Cięcie PSD
+                        </p>
+                        <p class="portfolio-text_paragraph"> Wykorzystano:
+                        </p>
+                        <ul class="portfolio-text_list">
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/html5ico.png" alt="HTML icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/css3ico.png" alt="CSS3 icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/jsico.png" alt="JavaScript icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/lessico.png" alt="LESS icon" class="portfolio-text_list-item-img">
+                            </li>
+                            <li class="portfolio-text_list-item">
+                                <img src="data/img/site/rwdico.png" alt="RWD icon" class="portfolio-text_list-item-img">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
                 <div class="portfolio-imageNtext">
                     <div class="portfolio-image">
                         <figure class="portfolio-image-fig">
@@ -431,49 +565,6 @@
                             <li class="portfolio-text_list-item">
                                 <img src="data/img/site/rwdico.png" alt="RWD icon" class="portfolio-text_list-item-img">
                             </li>                        </ul>
-                    </div>
-                </div>
-                <div class="portfolio-imageNtext">
-                    <div class="portfolio-image">
-                        <figure class="portfolio-image-fig">
-                            <img src="data/img/portfolio/hairsalon.jpg" alt="Strona Hair Salon">
-                            <figcaption class="portfolio-image-fig-figcap">
-                                <a href="https://andfra1.github.io/hairsalon/index.html" class="figcap-a figcap-a-link" target="_blank">
-                                    wyświetl stronę
-                                    </a>
-                                <br>
-                                <a href="https://github.com/andfra1/Hair-Salon" class="figcap-a figcap-a-source" target="_blank">
-                                    kod
-                                    </a>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="portfolio-text">
-                        <h2 class="portfolio-text_header">
-                            Hair Salon
-                        </h2>
-                        <p class="portfolio-text_paragraph">
-                            Cięcie PSD
-                        </p>
-                        <p class="portfolio-text_paragraph"> Wykorzystano:
-                        </p>
-                        <ul class="portfolio-text_list">
-                            <li class="portfolio-text_list-item">
-                                <img src="data/img/site/html5ico.png" alt="HTML icon" class="portfolio-text_list-item-img">
-                            </li>
-                            <li class="portfolio-text_list-item">
-                                <img src="data/img/site/css3ico.png" alt="CSS3 icon" class="portfolio-text_list-item-img">
-                            </li>
-                            <li class="portfolio-text_list-item">
-                                <img src="data/img/site/jsico.png" alt="JavaScript icon" class="portfolio-text_list-item-img">
-                            </li>
-                            <li class="portfolio-text_list-item">
-                                <img src="data/img/site/lessico.png" alt="LESS icon" class="portfolio-text_list-item-img">
-                            </li>
-                            <li class="portfolio-text_list-item">
-                                <img src="data/img/site/rwdico.png" alt="RWD icon" class="portfolio-text_list-item-img">
-                            </li>
-                        </ul>
                     </div>
                 </div>
                 <div class="portfolio-imageNtext">
