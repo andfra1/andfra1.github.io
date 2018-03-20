@@ -1,0 +1,13 @@
+.side {
+  flex: 2;
+  background-color: rgba($basic, 0.8);
+  width: 300px;
+  position: relative;
+  >.photo, .qr {
+    width: 100%;
+    > img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

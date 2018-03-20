@@ -1,0 +1,28 @@
+/*breakpoints*/
+@mixin mq($size) {
+  @if $size==laptop {
+    @media (max-width: 1200px) {
+      @content ;
+    }
+  }
+  @else if $size==tablet {
+    @media (max-width: 900px) {
+      @content ;
+    }
+  }
+  @else if $size==sTablet {
+    @media (max-width: 800px) {
+      @content ;
+    }
+  }
+  @else if $size==mobile {
+    @media (max-width: 500px) {
+      @content ;
+    }
+  }
+  @else if $size==sMobile {
+    @media (max-width: 320px) {
+      @content ;
+    }
+  }
+}

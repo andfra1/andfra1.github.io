@@ -72,26 +72,26 @@ hamburger.addEventListener('click', hamburgerMenu, false);
 //hamburger END <<<
 
 //read more toggle
-function readMoreToggle() {
-    if (readMoreBttn.value === 'on') {
-        readMoreBttn.innerHTML = 'Nie, jednak nie...';
-        readMoreBttn.value = 'off';
-        for (var rm = 0; rm < readMoreContent.length; rm++) {
-            readMoreContent[rm].style.display = 'block';
-        }
-        setTimeout(function () {
-            for (var rm = 0; rm < readMoreContent.length; rm++) {
-                readMoreContent[rm].style.display = 'block';
-                readMoreContent[rm].style.opacity = '1';
-            }
-        }, 200);
-    } else {
-        readMoreBttn.innerHTML = 'Urzekła mnie Twoja historia';
-        readMoreBttn.value = 'on';
-        for (var rm = 0; rm < readMoreContent.length; rm++) {
-            readMoreContent[rm].style = '';
-        }
-    }
-}
-readMoreBttn.addEventListener('click', readMoreToggle, false);
+// function readMoreToggle() {
+//     if (readMoreBttn.value === 'on') {
+//         readMoreBttn.innerHTML = 'Nie, jednak nie...';
+//         readMoreBttn.value = 'off';
+//         for (var rm = 0; rm < readMoreContent.length; rm++) {
+//             readMoreContent[rm].style.display = 'block';
+//         }
+//         setTimeout(function () {
+//             for (var rm = 0; rm < readMoreContent.length; rm++) {
+//                 readMoreContent[rm].style.display = 'block';
+//                 readMoreContent[rm].style.opacity = '1';
+//             }
+//         }, 200);
+//     } else {
+//         readMoreBttn.innerHTML = 'Urzekła mnie Twoja historia';
+//         readMoreBttn.value = 'on';
+//         for (var rm = 0; rm < readMoreContent.length; rm++) {
+//             readMoreContent[rm].style = '';
+//         }
+//     }
+// }
+// readMoreBttn.addEventListener('click', readMoreToggle, false);
 //read more END <<<

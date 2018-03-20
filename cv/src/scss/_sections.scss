@@ -1,0 +1,118 @@
+.content {
+  position: relative;
+  flex: 3;
+  padding-left: 30px;  
+  .section {
+    >.wrapper {
+      margin: 40px 0;
+    }
+    &__header {
+      color: $basic;
+      font-family: $comf;
+      //font-size: 72px;
+      font-weight: 700;
+      margin: 20px 0;
+    }
+    &__block {
+      //font-size: 60px;
+      font-size: 24px;
+      font-family: $robo;
+      color: $light;
+      &.about {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.skills {
+  .list {
+    &__item {
+      &Name {
+        width: 50%;
+        text-align: right;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      &Range {
+        display: inline-block;
+        margin-left: 15px;
+        //vertical-align: middle;
+      }
+    }
+  }
+  .range {
+    &__color {
+      vertical-align: middle;
+      margin-right: 7px;
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: rgba($basic,0.2);
+      &--color {
+        background-color: $basic;
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+.timeline {
+  height: 60px;
+  width: 100%;
+  display: block;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $basic;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+  &__item{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0,-50%);
+    &:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $basic;
+      left: 0;
+    }
+    &:nth-child(2n+1) {
+      left: 16%;
+      top: 100%;
+      transform: translate(-50%, -50%);
+      &:before {
+        top: -10px;
+        transform: translate(0, -5px);
+      }
+    }
+    &:nth-child(2n) {
+      left: 34%;
+      top: 0;
+      &:before {
+        top: 100%;
+        transform: translate(0, 5px);
+      }
+    }
+    &:nth-child(3) {
+      left: 78%;
+    }
+    &Name {
+      font-size: 16px;
+    }
+    &Val {
+      font-size: 11px;
+    }
+  }
+}

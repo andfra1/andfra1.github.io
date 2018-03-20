@@ -1,0 +1,66 @@
+.container {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  color: $light;
+  &:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $dark;
+    opacity: 0.8;
+  }
+  >.wrapper {
+    max-width: 1150px;
+    margin: 0 auto;
+    font-weight: 400;
+    background-image: url('../../img/mainbg2.jpg');
+    background-repeat: repeat-y;
+    background-position: center center;
+    display: flex;
+    padding: 50px;
+  }
+}
+
+svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  fill: inherit;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  margin-bottom: 38px;
+}
+
+h1 {
+  //font-size: 140px;
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  color: $light;
+  font-family: $robo;
+  font-size: 24px;
+}
+
+button {
+  cursor: pointer;
+}
