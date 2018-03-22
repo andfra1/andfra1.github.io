@@ -1,16 +1,19 @@
 .header {
-  >*:not(p) {
+  >h1 {
     color: rgba($basic, 0.7);
     font-family: $comf;
-    //font-size: 140px;
     font-weight: 400;
     margin: 0;
-    &:nth-child(2) {
-      padding-left: 40px;
-    }
     >span {
       color: $basic;
       font-weight: 700;
     }
+    &:nth-child(2) {
+      padding-left: 38px;
+    }
+  }
+  >p {
+    text-align: center;
+    color: $light;
   }
 }

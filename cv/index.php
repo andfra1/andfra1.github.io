@@ -11,6 +11,9 @@
 
 <body>
   <?php
+
+$addTime = time() + (14 * 86400);
+$displayDate = date('m.Y',$addTime);
 $data = [
   'photo'=>'img/zdjecie-2.png',
   'contact'=> [
@@ -20,7 +23,7 @@ $data = [
   ],
   'qr' => 'img/qr-code.png',
   'name' => '<h1><span>and</span>ruszkiewicz</h1><h1><span>fra</span>nciszek</h1>',
-  'portfolio' => 'andfra1.github.io',
+  'portfolio' => 'http://andfra1.github.io',
   'sections' => [
     'O sobie' => 
     [
@@ -31,21 +34,21 @@ $data = [
     [
       'skills' => 
       [
-        'html' => '5',
-        'scss' => '5',
+        'HTML' => '5',
+        'CSS/SCSS' => '5',
         'JS, jQ' => '2',
-        'Gulp, GIT' => '3',
-        'WordPress, Joomla!' => '2',
         'PHP' => '2',
+        'WordPress, Joomla!' => '2',
+        'Gulp, GIT' => '3',
         'Photoshop' => '4'
       ]
     ],
     'Doświadczenie' =>
     [
       'experience' => [
-        'SOLMedia' => '06.2017 - 09.2017',
-        'Crafton' => '10.2017 - now',
-        'Your company' => 'now'
+        'SOLMedia / front-end' => '06.2017 - 09.2017',
+        'Crafton / web-dev' => '10.2017 - '.$displayDate,
+        'Your company' => $displayDate.' - ...'
       ]
     ],
     'Wykształcenie' =>
@@ -60,41 +63,47 @@ $data = [
 ]
 ?>
 
-<div class="container">
-<div class="wrapper">
-    <div class="side">
-      <div class="photo">
-        <img src="<?=$data['photo'];?>" alt="Franciszek Andruszkiewicz - zdjęcie profilowe">
-      </div>
-      <div class="contact">
-        <?php foreach($data['contact'] as $item) : ?>
-        <p>
-          <?=$item?>
-        </p>
-        <?php endforeach;?>
-      </div>
-      <div class="qr">
-        <img src="<?=$data['qr'];?>" alt="Kod QR">
-      </div>
-    </div>
-    <div class="content">
-      <header class="header">
-          <?=$data['name']?>
-        <p>
-          <a href="http://<?=$data['portfolio']?>" target="_blank">
-          <?=$data['portfolio']?>
-          </a>
-        </p>
-      </header>
-      <?php foreach ($data['sections'] as $header => $content) : ?>
-      <section class="section">
-        <div class="wrapper">
-        <h2 class="section__header">
-          <?=$header;?>
-        </h2>
-        <?php foreach ($content as $class => $item) : ?>
-          <div class="section__block <?=$class?>">
-          <?php
+    <div class="container">
+      <div class="wrapper">
+        <div class="side">
+          <div class="photo">
+            <img src="<?=$data['photo'];?>" alt="Franciszek Andruszkiewicz - zdjęcie profilowe">
+          </div>
+          <div class="contact">
+            <?php foreach($data['contact'] as $item => $val) : ?>
+            <div class="contact__item">
+              <div class="contact__itemSvg">
+              <?php echo file_get_contents('img/svg/'.$item.'.svg'); ?>
+              </div>
+              <div class="contact__itemText">
+                <?=$val?>
+              </div>
+            </div>
+            <?php endforeach;?>
+          
+          <div class="qr">
+            <img src="<?=$data['qr'];?>" alt="Kod QR">
+          </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">
+            <?=$data['name']?>
+              <p>
+                <a href="<?=$data['portfolio']?>" target="_blank">
+                  <?=$data['portfolio']?>
+                </a>
+              </p>
+          </div>
+          <?php foreach ($data['sections'] as $header => $content) : ?>
+          <section class="section">
+            <div class="wrapper">
+              <h2 class="section__header">
+                <?=$header;?>
+              </h2>
+              <?php foreach ($content as $class => $item) : ?>
+              <div class="section__block <?=$class?>">
+                <?php
 
           switch($class) {
             case 'about' :
@@ -120,13 +129,13 @@ $data = [
             case 'experience' :
               echo '<ul class="timeline">';
               foreach ($item as $key => $val) {
-                echo '<li class="timeline__item"><div class="timeline__itemName">'.$key.'</div><div class="timeline__itemVal">'.$val.'</div></li>';
+                echo '<li class="timeline__item"><div class="timeline__itemName">'.$key.'</div><div class="timeline__itemVal">'.$val.'<span class="now"></span></div></li>';
               }
               echo '</ul>';
             break;
             
             case 'education' :
-              echo '<ul>';
+              echo '<ul class="edu">';
               foreach ($item as $key => $val) {
                 echo '<li>'.$key.'<span>'.$val.'</span></li>';
               }
@@ -134,19 +143,19 @@ $data = [
             break;
           }
           ?>
-          </div>
-        <?php endforeach;?>
+              </div>
+              <?php endforeach;?>
+            </div>
+          </section>
+          <?php endforeach;?>
+          <footer class="footer">
+            <div class="wrapper">
+              <?=$data['agreement']?>
+            </div>
+          </footer>
         </div>
-      </section>
-      <?php endforeach;?>
-      <footer class="footer">
-      <div class="wrapper">
-        <?=$data['agreement']?>
-        </div>
-      </footer>
+      </div>
     </div>
-  </div>
-</div>
 </body>
 
 </html>
