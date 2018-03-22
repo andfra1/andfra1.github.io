@@ -84,8 +84,8 @@ a, a:active, a:focus, a:hover, a:visited {
 /*breakpoints*/
 .container {
   position: absolute;
-  width: 100%;
-  height: auto;
+  width: 2480px;
+  height: 3508px;
   top: 0;
   left: 0;
   color: #fff; }
