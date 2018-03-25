@@ -13,13 +13,13 @@
   <?php
 
 $addTime = time() + (14 * 86400);
-$displayDate = date('m.Y',$addTime);
+$displayDate = date('d.m.Y',$addTime);
 $data = [
   'photo'=>'img/zdjecie-2.png',
   'contact'=> [
     'address' => 'Polska, Poznań',
-    'tel' => '+ 48 886 552 562',
-    'mail' => 'fandruszkiewicz@gmail.com'
+    'tel' => '<a href="tel:+ 48 886 552 562">+ 48 886 552 562</a>',
+    'mail' => '<a href="mailto:fandruszkiewicz@gmail.com">fandruszkiewicz@gmail.com</a>'
   ],
   'qr' => 'img/qr-code.png',
   'name' => '<h1><span>and</span>ruszkiewicz</h1><h1><span>fra</span>nciszek</h1>',
@@ -30,7 +30,7 @@ $data = [
       'about' => 
       'Jestem początkującym front-end developerem i szukam etatu/stażu w Poznaniu. Zależy mi na rozwinięciu obecnych umiejętności i nabyciu nowych (Angular, PHP, SQL).'
     ],
-    'Co umiem' =>
+    'Umiejętności' =>
     [
       'skills' => 
       [
@@ -46,7 +46,7 @@ $data = [
     'Doświadczenie' =>
     [
       'experience' => [
-        'SOLMedia / front-end' => '06.2017 - 09.2017',
+        'SOLMedia / web-dev' => '06.2017 - 09.2017',
         'Crafton / web-dev' => '10.2017 - '.$displayDate,
         'Your company' => $displayDate.' - ...'
       ]
