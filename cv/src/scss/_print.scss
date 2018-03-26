@@ -1,0 +1,17 @@
+@media print {
+  *{
+    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
+    color-adjust: exact !important; /*ff*/
+    color: #fff;
+    }
+}
+
+@page {
+  size:A4 portait;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 50px;
+  -webkit-print-color-adjust: exact;
+}

@@ -28,18 +28,20 @@ $data = [
     'O sobie' => 
     [
       'about' => 
-      'Jestem początkującym front-end developerem i szukam etatu/stażu w Poznaniu. Zależy mi na rozwinięciu obecnych umiejętności i nabyciu nowych (Angular, PHP, SQL).'
+      'Jestem początkującym front-end developerem i szukam etatu w Poznaniu. Zależy mi na rozwinięciu obecnych umiejętności i nabyciu nowych (Angular/React, PHP/Django).'
     ],
     'Umiejętności' =>
     [
       'skills' => 
       [
         'HTML' => '5',
-        'CSS/SCSS' => '5',
-        'JS, jQ' => '2',
+        'SASS' => '5',
+        'JavaScript' => '3',
+        'jQuery' => '3',
         'PHP' => '2',
-        'WordPress, Joomla!' => '2',
-        'Gulp, GIT' => '3',
+        'WordPress' => '2',
+        'Gulp' => '3',
+        'GIT' => '3',
         'Photoshop' => '4'
       ]
     ],
@@ -55,7 +57,7 @@ $data = [
     [
       'education' => 
       [
-        'Europejska Wyższa Szkoła Biznesu' => 'ZZL (licencjat)'
+        'Europejska Wyższa Szkoła Biznesu' => 'zarządzanie zasobami ludzkimi (licencjat)'
       ]
     ]
   ],
@@ -113,7 +115,8 @@ $data = [
             case 'skills' :
               echo '<ul class="list">';
               foreach ($item as $key => $val) {
-                echo '<li class="list__item"><div class="list__itemName">'.$key.'</div><div class="list__itemRange range">';
+                echo '<li class="list__item" data-tooltip="'.$key.'"><div class="list__itemName">'.file_get_contents("img/svg/".$key.".svg").'</div>
+                <div class="list__itemRange range">';
                   foreach(range(0, 4, 1) as $num) :
                     if ($num < $val) :
                       echo '<span class="range__color range__color--color"></span>';

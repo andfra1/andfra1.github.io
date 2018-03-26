@@ -7,17 +7,31 @@
   top: 0;
   left: 0;
   color: $light;
+  @include mq(1039px) {
+    height: 100%;
+  &:before {
+    content: "You can't display this page on a screen smaller than 1040px";
+    color: $dark;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
   >.wrapper {
-    width: 1240px;
-    height: 1754px;
+    width: 1040px;
+    height: 1490px;
     margin: 0 auto;
     font-weight: 400;
     background-image: url('../../img/mainbg2.jpg');
     background-repeat: repeat-y;
     background-position: center center;
     display: flex;
-    padding: 50px;
+    padding: 20px;
     position: relative;
+    @include mq(1040px) {
+      display: none;
+    }
     &:before {
       content: '';
       position: absolute;
@@ -43,6 +57,7 @@ h1,
 h2 {
   font-weight: 300;
   margin-bottom: 38px;
+  color: $light;
 }
 
 h1 {
@@ -62,4 +77,11 @@ p {
 
 button {
   cursor: pointer;
+}
+
+svg {
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  position: relative;
 }
