@@ -88,20 +88,6 @@ a, a:active, a:focus, a:hover, a:visited {
   top: 0;
   left: 0;
   color: #fff; }
-  @media (max-width: 1039px) {
-    .container {
-      height: 100%; }
-      .container:before {
-        content: "You can't display this page on a screen smaller than 1040px";
-        color: #000;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%); } }
   .container > .wrapper {
     width: 1040px;
     height: 1490px;
@@ -117,9 +103,6 @@ a, a:active, a:focus, a:hover, a:visited {
     display: flex;
     padding: 20px;
     position: relative; }
-    @media (max-width: 1040px) {
-      .container > .wrapper {
-        display: none; } }
     .container > .wrapper:before {
       content: '';
       position: absolute;

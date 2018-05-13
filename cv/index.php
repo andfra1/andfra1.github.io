@@ -13,7 +13,8 @@
   <?php
 
 $addTime = time() + (14 * 86400);
-$displayDate = date('d.m.Y',$addTime);
+//$displayDate = date('d.m.Y',$addTime);
+$displayDate = '20.05.2018r.';
 $data = [
   'photo'=>'img/zdjecie-2.png',
   'contact'=> [
@@ -23,26 +24,26 @@ $data = [
   ],
   'qr' => 'img/qr-code.png',
   'name' => '<h1><span>and</span>ruszkiewicz</h1><h1><span>fra</span>nciszek</h1>',
-  'portfolio' => 'http://andfra1.github.io',
+  'portfolio' => 'http://andfra.pl',
   'sections' => [
     'O sobie' => 
     [
       'about' => 
-      'Jestem początkującym front-end developerem i szukam etatu w Poznaniu. Zależy mi na rozwinięciu obecnych umiejętności i nabyciu nowych (Angular/React, PHP/Django).'
+      'Jestem początkującym front-end developerem, którego fascynuje to co nowe. W niedalekiej przyszłóści widzę się jako full-stack. Obecnie szlifuję JavaScript i WordPress+PHP.'
     ],
     'Umiejętności' =>
     [
       'skills' => 
       [
-        'HTML' => '5',
-        'SASS' => '5',
-        'JavaScript' => '3',
-        'jQuery' => '3',
-        'PHP' => '2',
-        'WordPress' => '2',
-        'Gulp' => '3',
-        'GIT' => '3',
-        'Photoshop' => '4'
+        'html' => '5',
+        'sass' => '5',
+        'javascript' => '2',
+        'jquery' => '2',
+        'php' => '2',
+        'wordpress' => '2',
+        'gulp' => '3',
+        'git' => '3',
+        'photoshop' => '4'
       ]
     ],
     'Doświadczenie' =>

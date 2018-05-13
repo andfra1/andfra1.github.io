@@ -7,17 +7,17 @@
   top: 0;
   left: 0;
   color: $light;
-  @include mq(1039px) {
-    height: 100%;
-  &:before {
-    content: "You can't display this page on a screen smaller than 1040px";
-    color: $dark;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
+  // @include mq(1039px) {
+  //   height: 100%;
+  // &:before {
+  //   content: "You can't display this page on a screen smaller than 1040px";
+  //   color: $dark;
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  // }
+//}
   >.wrapper {
     width: 1040px;
     height: 1490px;
@@ -29,9 +29,9 @@
     display: flex;
     padding: 20px;
     position: relative;
-    @include mq(1040px) {
-      display: none;
-    }
+    // @include mq(1040px) {
+    //   display: none;
+    // }
     &:before {
       content: '';
       position: absolute;
