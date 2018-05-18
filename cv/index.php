@@ -29,7 +29,7 @@ $data = [
     'O sobie' => 
     [
       'about' => 
-      'Jestem początkującym front-end developerem, którego fascynuje to co nowe. W niedalekiej przyszłóści widzę się jako full-stack. Obecnie szlifuję JavaScript i WordPress+PHP.'
+      'Jestem front-end developerem, którego fascynuje to co nowe. W niedalekiej przyszłóści widzę się jako full-stack. Obecnie szlifuję JavaScript i WordPress+PHP.'
     ],
     'Umiejętności' =>
     [
