@@ -124,13 +124,14 @@ body {
 
 .header_content-name {
     display: block;
-    font-size: 1.2em;
-    font-family: 'Comfortaa', sans-serif
+    font-size: 0;
+    font-family: 'Comfortaa', sans-serif;
 }
 
-.header_content-name span {
+.header_content-name > span {
     color: #044f4d;
-    text-align: left
+    text-align: left;
+    font-size: 1.2rem;
 }
 
 .header_content-name span:first-child {
