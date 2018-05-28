@@ -1,17 +1,23 @@
 @media print {
-  *{
-    -webkit-print-color-adjust: exact !important;   /* Chrome, Safari */
-    color-adjust: exact !important; /*ff*/
+  * {
+    -webkit-print-color-adjust: exact !important;
+    /* Chrome, Safari */
+    color-adjust: exact !important;
+    /*ff*/
     color: #fff;
-    }
+  }
+  .timeline__item:after {
+    content: none;
+  }
 }
 
 @page {
-  size:A4 portait;
+  size: A4 portait;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 50px;
   margin-bottom: 50px;
   margin: 50px;
+  height: 100vh;
   -webkit-print-color-adjust: exact;
 }

@@ -29,7 +29,7 @@ $data = [
     'O sobie' => 
     [
       'about' => 
-      'Jestem początkującym front-end developerem, którego fascynuje to co nowe. W niedalekiej przyszłóści widzę się jako full-stack. Obecnie szlifuję JavaScript i WordPress+PHP.'
+      'Jestem front-end developerem, którego fascynuje to co nowe. W niedalekiej przyszłóści widzę się jako full-stack. Obecnie szlifuję JavaScript i WordPress+PHP.'
     ],
     'Umiejętności' =>
     [
@@ -54,13 +54,13 @@ $data = [
         'Your company' => $displayDate.' - ...'
       ]
     ],
-    // 'Wykształcenie' =>
-    // [
-    //   'education' => 
-    //   [
-    //     'Europejska Wyższa Szkoła Biznesu' => 'zarządzanie zasobami ludzkimi (licencjat)'
-    //   ]
-    // ]
+    'Wykształcenie' =>
+    [
+      'education' => 
+      [
+        'Europejska Wyższa Szkoła Biznesu' => 'zarządzanie zasobami ludzkimi (licencjat)'
+      ]
+    ]
   ],
   'agreement' => 'Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z Ustawą z dnia 29.08.1997 roku o Ochronie Danych Osobowych; tekst jednolity: Dz. U. 2016 r. poz. 922).'
 ]
