@@ -1,1 +1,5 @@
-cv/node_modules/
+node_modules
+.vscode
+package-lock.json
+__temp
+_gulp/node_modules
